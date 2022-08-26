@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$blue: #00C4D2;
+
+body {
+    font-family: "Montserrat";
+    background-color: #161616;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.pro {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 50%;
+    }
+
+    &__title {
+        font-size: 30px;
+        color: $blue;
+        margin-top: 70px;
+        font-weight: 600;
+    }
+
+    &__text {
+        font-size: 20px;
+        color: #fff;
+        margin-top: 60px;
+    }
+    &__phone-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__phone-text span{
+        font-size: 20px;
+        color: $blue;
+        font-weight: 600;
+    }
+    &__btn {
+        width: 365px;
+        height: 52px;
+        border-radius: 3px;
+        color: #000;
+        font-weight: 600;
+        background-color: #00C4D2;
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    &__video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    &__img {
+        max-width: 350px;
+    }
+
+    @media(max-width:831px) {
+        &__text {
+            font-size: 17px;
+            margin-top: 14px;
+        }
+        &__title {
+            font-size: 23px;
+        }
+    }
+
+    @media(max-width:780px) {
+        &__img {
+            max-width: 287px;
+        }
+    }
+
+    @media(max-width:653px) {
+        &__inner {
+            flex-direction: column;
+        }
+        &__img {
+            margin: 0 auto;
+            align-items: center;
+            display: flex;
+            margin-top: 20px;
+            max-width: 240px;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__title {
+            text-align: center;
+
+        }
+        &__phone-text {
+            text-align: center;
+        }
+        &__item {
+            width: 75%;
+        }
+    }
+    @media(max-width:435px) {
+        &__text {
+            text-align: center;
+            width: 100%;
+        }
+        &__title {
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+        }
+        &__phone-text {
+            text-align: center;
+            font-size: 13px;
+        }
+        &__item {
+            width: 100%;
+
+        }
+        &__btn {
+            width: 200px;
+        }
+        &__video {
+            width: 100%;
+        }
+    }
+}
